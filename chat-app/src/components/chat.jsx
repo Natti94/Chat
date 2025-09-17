@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { postMessages, getUserMessages, deleteMessages } from "../services";
 import { mockMessages } from "../mocks";
-import SideNav from "./nav"
+import SideNav from "./nav";
 import DOMPurify from "dompurify";
 
-// KONTROLLERAR TOKEN ANNARS RETURNAR NULL OM INGET SKICKAS
-// KONVERTERAR TILL BASE64 & AVKODAR TILL EN VANLIG STRÄNG
 function parseJwt(token) {
   if (!token) return null;
   try {
