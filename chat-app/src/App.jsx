@@ -7,6 +7,20 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
+      <h1 className="app-title">
+        Chat App - Made by Natnael Berhane. Visit other projects on my portfolio
+        page.
+        <br />
+        <button
+          onClick={() =>
+            window.open("https://projects-natnael.netlify.app/", "_blank", "noreferrer")
+          }
+          aria-label="Projects"
+          title="Projects"
+        >
+          📁 Visit Other Projects
+        </button>
+      </h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to="/register" />} />
